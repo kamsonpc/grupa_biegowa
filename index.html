@@ -13,39 +13,157 @@
     <!-- STYLE -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
-    <div class="container">
+    <div class="site-container">
         <!-- Logo -->
+        <h1>LOGO</h1>
         <!--Navbar -->
-        <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+        <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse bg-faded">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-            <a class="navbar-brand" href="#">Navbar</a>
+            <span class="navbar-brand">Menu</span>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Strona Główna <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                      <li class="nav-item active">
+                        <a class="nav-link" href="#">Aktualności</a>
                     </li>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Harmonogram </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Wyniki
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Mężczyźni</a>
+                            <a class="dropdown-item" href="#">Kobiety</a>
+                            <a class="dropdown-item" href="#">Juniorzy</a>
+                        </div>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Trasa</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Zapisy</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Galeria</a>
+                    </li>
+                     <li class="nav-item ">
+                        <a class="nav-link" href="#">Kontakt</a>
+                    </li>
+                    
+
+
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    <!-- <input class="" type="text" placeholder="Search"> -->
+                    <i class="search-icon mr-sm-2 fa fa-search" aria-hidden="true"></i>
                 </form>
             </div>
         </nav>
+        <!--  SLIDER      -->
+        <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <div id="slide1" class="slide"></div>
+                </div>
+                <div class="carousel-item">
+                    <div id="slide2" class="slide"></div>
+                </div>
+                <div class="carousel-item">
+                    <div id="slide3" class="slide"></div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!--  Crumsbread      -->
+        <nav class="breadcrumb">
+            <a class="breadcrumb-item" href="#">Strona Główna</a>
+            <span class="breadcrumb-item active">Aktualności</span>
+        </nav>
+        <!--  content      -->
+        <h2 class="site-header">Aktualności</h2>
+        <div class="content-container">
+            <div class="post">
+                <div class="post-topbar">
+
+                    <div class="row">
+                        <div class="col post-author "><i class="fa fa-user" aria-hidden="true"></i> Przemek
+                        </div>
+                        <div class="col post-date"><i class="fa fa-calendar-o" aria-hidden="true"></i> 14 PAŹDZIERNIKA 2017</div>
+                    </div>
+                </div>
+                <div class="post-thumbnail">
+                    <img class="img-thumb" src="img/trasa.jpg">    
+                </div>
+                <div class="post-describe">
+                    <h2>Zmiana Trasy</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec justo turpis, luctus tincidunt suscipit ut, ornare id risus. Nulla ultricies augue sit amet turpis commodo, et efficitur orci facilisis. Nam eleifend quam augue, ac interdum eros accumsan et. Pellentesque euismod erat ut tincidunt pharetra. Vivamus dapibus varius enim, sit amet dignissim ante hendrerit eu. Proin arcu justo, varius eu dolor sed, aliquet tempor ante. Curabitur porta, diam sed ultrices porttitor, augue risus pellentesque diam, ac eleifend velit turpis consequat risus. Vestibulum congue auctor lectus, quis suscipit diam hendrerit quis. Phasellus ornare, mi quis venenatis tincidunt, risus metus posuere nunc, sed facilisis nibh leo eu sem.
+                    </p>
+                    <a class="btn btn-show-more">Przeczytaj więcej</a>
+                    <hr>
+                </div>
+            </div>
+                        <div class="post">
+                <div class="post-topbar">
+
+                    <div class="row">
+                        <div class="col post-author"><i class="fa fa-user" aria-hidden="true"></i> Przemek
+                        </div>
+                        <div class="col post-header"></div>
+                        <div class="col post-date"><i class="fa fa-calendar-o" aria-hidden="true"></i> 13 PAŹDZIERNIKA 2017</div>
+                    </div>
+                </div>
+                <div class="post-thumbnail">
+                    <img class="img-thumb" src="img/bmw.jpg">    
+                </div>
+                <div class="post-describe">
+                    <h2>Nowy Sponsor</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec justo turpis, luctus tincidunt suscipit ut, ornare id risus. Nulla ultricies augue sit amet turpis commodo, et efficitur orci facilisis. Nam eleifend quam augue, ac interdum eros accumsan et. Pellentesque euismod erat ut tincidunt pharetra. Vivamus dapibus varius enim, sit amet dignissim ante hendrerit eu. Proin arcu justo, varius eu dolor sed, aliquet tempor ante. Curabitur porta, diam sed ultrices porttitor, augue risus pellentesque diam, ac eleifend velit turpis consequat risus. Vestibulum congue auctor lectus, quis suscipit diam hendrerit quis. Phasellus ornare, mi quis venenatis tincidunt, risus metus posuere nunc, sed facilisis nibh leo eu sem.
+                    </p>
+                      <a class="btn btn-show-more">Przeczytaj więcej</a>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="sponsors">
+                <h2 class="sponsors-header">Sponsorzy</h2>
+                <div class="container-fluid">
+                    <div class="row">
+                    <div class="col"><img class="img-fluid img-sponsor" src="img/sponsors/logo1.png"></div>
+                    <div class="col"><img class="img-fluid img-sponsor"  src="img/sponsors/logo2.png"></div>
+                    <div class="col"><img class="img-fluid img-sponsor"  src="img/sponsors/logo3.png"></div>
+                </div>
+                </div>
+                
+            </div>
+            <div class="copyright">&copy; Wszelkie prawa zastrzeżone przez Grupa Biegowa</div>
+        </footer>
     </div>
 </body>
 
