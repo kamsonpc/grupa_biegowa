@@ -20,9 +20,9 @@
 
     <div class="site-container">
         <!-- Logo -->
-        <h1>LOGO</h1>
+        <h2> Logo </h2>
         <!--Navbar -->
-        <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse bg-faded">
+        <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse bg-faded " data-spy="affix" data-spy="affix" data-offset-top="205">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -33,7 +33,7 @@
                     <li class="nav-item ">
                         <a class="nav-link hvr-underline-from-center" href="#">Strona Główna <span class="sr-only">(current)</span></a>
                     </li>
-                      <li class="nav-item active hvr-underline-from-center">
+                    <li class="nav-item active hvr-underline-from-center">
                         <a class="nav-link hvr-sweep-to-top" href="#">Aktualności</a>
                     </li>
                     <li class="nav-item hvr-underline-from-center">
@@ -58,15 +58,15 @@
                     <li class="nav-item ">
                         <a class="nav-link hvr-sweep-to-top" href="#">Galeria</a>
                     </li>
-                     <li class="nav-item ">
+                    <li class="nav-item ">
                         <a class="nav-link hvr-sweep-to-top" href="#">Kontakt</a>
                     </li>
-                    
+
 
 
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                    <input id="search-input" type="text" placeholder="Wyszukaj"> 
+                    <input id="search-input" type="text" placeholder="Wyszukaj">
                     <i id="search" class="search-icon mr-sm-2 fa fa-search" aria-hidden="true"></i>
                 </form>
             </div>
@@ -80,13 +80,34 @@
             </ol>
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
-                    <div id="slide1" class="slide"></div>
+                    <div id="slide2" class="slide">
+                        <div class="layer"></div>
+                    </div>
+                    <div class="carousel-caption ">
+                        <h3>Wydarzenie</h3>
+                        <p>Bieg będzie wielkim wydarzeniem </p>
+                        <a class="btn  ">Więcej Informacji</a>
+                    </div>
                 </div>
                 <div class="carousel-item">
-                    <div id="slide2" class="slide"></div>
+                    <div id="slide1" class="slide">
+                         <div class="layer"></div>
+                    </div>
+                    <div class="carousel-caption">
+                        <h3>Zapisy</h3>
+                        <p>Trwają tylko do 12 stycznia nie czekaj !!</p>
+                        <a class="btn   ">Zapisz się</a>
+                    </div>
                 </div>
                 <div class="carousel-item">
-                    <div id="slide3" class="slide"></div>
+                    <div id="slide3" class="slide">
+                         <div class="layer"></div>
+                    </div>
+                    <div class="carousel-caption ">
+                        <h3>Trasa</h3>
+                        <p>Trasa biegu przebiega przez piękne tereny Brzózy Królewskiej.</p>
+                        <a class="btn   ">Zobacz Trasę</a>
+                    </div>
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
@@ -116,7 +137,7 @@
                     </div>
                 </div>
                 <div class="post-thumbnail">
-                    <img class="img-thumb" src="img/trasa.jpg">    
+                    <img class="img-thumb" src="img/trasa.jpg">
                 </div>
                 <div class="post-describe">
                     <h2>Zmiana Trasy</h2>
@@ -127,7 +148,7 @@
                     <hr>
                 </div>
             </div>
-                        <div class="post">
+            <div class="post">
                 <div class="post-topbar">
 
                     <div class="row">
@@ -138,14 +159,14 @@
                     </div>
                 </div>
                 <div class="post-thumbnail">
-                    <img class="img-thumb" src="img/bmw.jpg">    
+                    <img class="img-thumb" src="img/bmw.jpg">
                 </div>
                 <div class="post-describe">
                     <h2>Nowy Sponsor</h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec justo turpis, luctus tincidunt suscipit ut, ornare id risus. Nulla ultricies augue sit amet turpis commodo, et efficitur orci facilisis. Nam eleifend quam augue, ac interdum eros accumsan et. Pellentesque euismod erat ut tincidunt pharetra. Vivamus dapibus varius enim, sit amet dignissim ante hendrerit eu. Proin arcu justo, varius eu dolor sed, aliquet tempor ante. Curabitur porta, diam sed ultrices porttitor, augue risus pellentesque diam, ac eleifend velit turpis consequat risus. Vestibulum congue auctor lectus, quis suscipit diam hendrerit quis. Phasellus ornare, mi quis venenatis tincidunt, risus metus posuere nunc, sed facilisis nibh leo eu sem.
                     </p>
-                      <a class="btn btn-show-more  ">Przeczytaj więcej</a>
+                    <a class="btn btn-show-more  ">Przeczytaj więcej</a>
                     <hr>
                 </div>
             </div>
@@ -155,16 +176,17 @@
                 <h2 class="sponsors-header">Sponsorzy</h2>
                 <div class="container-fluid">
                     <div class="row">
-                    <div class="col"><img class="img-fluid img-sponsor" src="img/sponsors/logo1.png"></div>
-                    <div class="col"><img class="img-fluid img-sponsor"  src="img/sponsors/logo2.png"></div>
-                    <div class="col"><img class="img-fluid img-sponsor"  src="img/sponsors/logo3.png"></div>
+                        <div class="col"><img class="img-fluid img-sponsor" src="img/sponsors/logo1.png"></div>
+                        <div class="col"><img class="img-fluid img-sponsor" src="img/sponsors/logo2.png"></div>
+                        <div class="col"><img class="img-fluid img-sponsor" src="img/sponsors/logo3.png"></div>
+                    </div>
                 </div>
-                </div>
-                
+
             </div>
             <div class="copyright">&copy; Wszelkie prawa zastrzeżone przez Grupa Biegowa</div>
         </footer>
     </div>
+   <!--  <div class="btn scrollup"><i class="fa fa-arrow-up"></i></div> -->
 </body>
 
 </html>
