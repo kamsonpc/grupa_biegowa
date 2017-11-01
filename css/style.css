@@ -10,9 +10,14 @@ h2 {
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
+  font-size: 25px;
 }
 a:hover {
   text-decoration: none;
+}
+#logo {
+  font-size: 45px;
+  padding: 10px 0px;
 }
 #search {
   color: #FFF;
@@ -33,6 +38,17 @@ a:hover {
 .site-container {
   width: 100%;
   background: #fff;
+}
+.nav-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 100;
+  max-width: 1202px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .nav-link {
   display: inline-block;
@@ -111,9 +127,12 @@ a.dropdown-item:hover {
 }
 .carousel-caption h3 {
   text-transform: uppercase;
-  font-size: 33px;
+  font-size: 22px;
   letter-spacing: 1px;
   font-weight: 700;
+}
+.carousel-caption p {
+  font-size: 16px;
 }
 .content-container {
   margin: 10px;
@@ -136,9 +155,11 @@ a.dropdown-item:hover {
 }
 .site-header {
   margin: 60px 25px;
+  font-size: 28px;
 }
 .post {
   margin-top: 10px;
+  font-size: 14px;
   margin-bottom: 10px;
 }
 .post-topbar {
@@ -154,7 +175,7 @@ a.dropdown-item:hover {
   font-weight: 300;
 }
 .post-date {
-  font-size: 10px;
+  font-size: 12px;
   text-align: right;
 }
 .img-thumb {
@@ -174,7 +195,7 @@ a.dropdown-item:hover {
   display: block;
   width: 180px;
   margin-left: auto;
-  margin-right: 15px;
+  margin-right: auto;
 }
 .btn {
   border: 2px solid rgba(43, 43, 43, 0.82);
@@ -232,6 +253,15 @@ a.dropdown-item:hover {
   padding-top: 10px;
   text-align: center;
 }
+.up-container {
+  padding: 5px;
+  width: 100%;
+  background: rgba(13, 13, 13, 0.82);
+  text-align: center;
+}
+.up-arrow {
+  color: #fff;
+}
 .img-sponsor {
   display: block;
   margin-left: auto;
@@ -245,6 +275,7 @@ a.dropdown-item:hover {
   padding: 20px 0px;
   text-transform: uppercase;
   text-align: center;
+  font-size: 12px;
 }
 @media only screen and (min-width: 600px) {
   .slide {
@@ -261,7 +292,28 @@ a.dropdown-item:hover {
     background-image: url("../img/slide-lg/slide2.jpg");
   }
   .carousel-caption h3 {
-    font-size: 50px;
+    font-size: 45px;
+  }
+  .carousel-caption p {
+    font-size: 19px;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  .site-header {
+    font-size: 35px;
+  }
+  .post-date {
+    font-size: 16px;
+  }
+  .post-author {
+    font-size: 16px;
+  }
+  .post {
+    font-size: 16px;
+  }
+  .copyright {
+    font-size: 16px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -274,6 +326,49 @@ a.dropdown-item:hover {
   .carousel-caption h3 {
     font-size: 66spx;
   }
+  .btn-show-more {
+    margin-right: 15px;
+  }
+  .carousel-caption h3 {
+    font-size: 55px;
+  }
+  .carousel-caption p {
+    font-size: 21px;
+  }
+  h2 {
+    font-size: 38px;
+  }
+  .site-header {
+    font-size: 38px;
+  }
+  .post-date {
+    font-size: 18px;
+  }
+  .post-author {
+    font-size: 18px;
+  }
+  .post {
+    font-size: 18px;
+  }
+  .copyright {
+    font-size: 18px;
+  }
+  .breadcrumb {
+    font-size: 19px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .navbar-brand {
+    display: none;
+  }
+  .navbar {
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+  .nav-link {
+    padding: 15px;
+    font-size: 18px;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .navbar-brand {
@@ -282,6 +377,9 @@ a.dropdown-item:hover {
   .navbar {
     padding-bottom: 0px;
     padding-top: 0px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .nav-link {
     padding: 15px;
@@ -297,9 +395,14 @@ a.dropdown-item:hover {
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    border-left: 1px solid rgba(43, 43, 43, 0.82);
+    border-right: 1px solid rgba(43, 43, 43, 0.82);
   }
   .content-container {
     margin: 25px;
+  }
+  .copyright {
+    font-size: 20px;
   }
   /*     .scrollup
     {

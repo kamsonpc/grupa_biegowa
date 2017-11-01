@@ -10,6 +10,13 @@ sans-serif;
 0%,
 17%,
 1);
+
+@sm-post-s: 16px;
+@sm-h2-s:35px;
+@md-post-s:18px;
+@md-h2-s:38px;
+@lg-post-s:20px;
+@lg-h2-s:40px;
 body {
     font-family: @main-font;
     background: url("../img/background.jpg");
@@ -21,10 +28,16 @@ h2 {
     font-weight: 600;
     letter-spacing: 1px;
     text-transform: uppercase;
+    font-size: 25px;
 }
 a:hover
 {
     text-decoration: none;
+}
+#logo
+{
+    font-size: 45px;
+    padding: 10px 0px;
 }
 #search {
     color: #FFF;
@@ -55,7 +68,18 @@ a:hover
 }
 
 .container {}
-
+.nav-fixed
+{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 100;
+    max-width: 1202px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .nav-link {
     display: inline-block;
     vertical-align: middle;
@@ -143,10 +167,14 @@ a.dropdown-item:hover
 .carousel-caption h3
 {
     text-transform: uppercase;
-    font-size: 33px;
+    font-size: 22px;
     letter-spacing: 1px;
     font-weight: 700;
     
+}
+.carousel-caption p
+{
+    font-size: 16px;
 }
 .content-container {
     margin: 10px;
@@ -175,10 +203,12 @@ a.dropdown-item:hover
 
 .site-header {
     margin: 60px 25px;
+    font-size: 28px;
 }
 
 .post {
     margin-top: 10px;
+    font-size: 14px;
     margin-bottom: 10px;
 }
 
@@ -197,7 +227,7 @@ a.dropdown-item:hover
 }
 
 .post-date {
-    font-size: 10px;
+    font-size: 12px;
     text-align: right;
 }
 
@@ -221,7 +251,7 @@ a.dropdown-item:hover
     display: block;
     width: 180px;
     margin-left: auto;
-    margin-right: 15px;
+    margin-right: auto;
 }
 .btn {
     border: 2px solid @extra-color;
@@ -285,7 +315,18 @@ a.dropdown-item:hover
     padding-top: 10px;
     text-align: center;
 }
+.up-container
+{
+padding: 5px;
+ width: 100%;
+    background: darken(@extra-color,12%);
+    text-align: center;
+}
+.up-arrow
+{
+color: #fff;
 
+}
 .img-sponsor {
     display: block;
     margin-left: auto;
@@ -300,9 +341,11 @@ a.dropdown-item:hover
     padding: 20px 0px;
     text-transform: uppercase;
     text-align: center;
+    font-size: 12px;
 }
 
 @media only screen and (min-width: 600px) {
+
     .slide {
         min-height: 500px;
         max-height: 600px;
@@ -319,7 +362,36 @@ a.dropdown-item:hover
     }
     .carousel-caption h3
     {
-        font-size: 50px;
+        font-size: 45px;
+    }
+    .carousel-caption p
+    {
+        font-size: 19px;
+    }
+    h2
+    {
+        font-size: @sm-h2-s;
+    }
+    .site-header
+    {
+        font-size: @sm-h2-s;
+    }
+    .post-date {
+        font-size: @sm-post-s;
+    }
+    .post-author
+    {
+       
+        font-size: @sm-post-s;
+   
+    }
+    .post
+    {
+      font-size: @sm-post-s;  
+    }
+    .copyright
+    {
+        font-size: @sm-post-s;
     }
 }
 
@@ -334,8 +406,62 @@ a.dropdown-item:hover
     {
         font-size: 66spx;
     }
-}
+    .btn-show-more
+    {
 
+    margin-right: 15px;
+    }
+    .carousel-caption h3
+    {
+        font-size: 55px;
+    }
+    .carousel-caption p
+    {
+        font-size: 21px;
+    }
+    h2
+    {
+        font-size: @md-h2-s;
+    }
+    .site-header
+    {
+        font-size: @md-h2-s;
+    }
+    .post-date {
+        font-size: @md-post-s;
+    }
+    .post-author
+    {
+       
+        font-size: @md-post-s;
+   
+    }
+    .post
+    {
+      font-size: @md-post-s;  
+    }
+    .copyright
+    {
+        font-size: @md-post-s;
+    }
+    .breadcrumb {
+    font-size: 19px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .navbar-brand {
+        display: none;
+    }
+    .navbar {
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+    .nav-link
+    {
+        padding: 15px;
+        font-size: 18px;
+    }
+}
 @media only screen and (min-width: 1200px) {
     .navbar-brand {
         display: none;
@@ -343,6 +469,10 @@ a.dropdown-item:hover
     .navbar {
     padding-bottom: 0px;
     padding-top: 0px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+        
 }
     .nav-link
     {
@@ -361,9 +491,16 @@ a.dropdown-item:hover
         width: 1200px;
         margin-left: auto;
         margin-right: auto;
+        border-left: 1px solid @extra-color;
+        border-right: 1px solid  @extra-color;
+       
     }
     .content-container {
         margin: 25px;
+    }
+    .copyright
+    {
+        font-size: @lg-post-s;
     }
 /*     .scrollup
     {

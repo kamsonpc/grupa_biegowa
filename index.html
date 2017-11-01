@@ -9,6 +9,7 @@
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="js/sticky.js"></script>
     <script src="js/search.js"></script>
     <!-- STYLE -->
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -17,11 +18,10 @@
 </head>
 
 <body>
-
-    <div class="site-container">
-        <!-- Logo -->
-        <h2> Logo </h2>
-        <!--Navbar -->
+           <div class="site-container">
+                   <div id="logo"> Logo</div> 
+           </div>
+            <!--Navbar -->
         <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse bg-faded " data-spy="affix" data-spy="affix" data-offset-top="205">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -31,13 +31,19 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item ">
-                        <a class="nav-link hvr-underline-from-center" href="#">Strona Główna <span class="sr-only">(current)</span></a>
+                        <a class="nav-link active hvr-underline-from-center" href="#">Aktualności <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item active hvr-underline-from-center">
-                        <a class="nav-link hvr-sweep-to-top" href="#">Aktualności</a>
+                    <li class="nav-item  hvr-underline-from-center">
+                        <a class="nav-link hvr-sweep-to-top" href="#">Wydarzenie</a>
                     </li>
                     <li class="nav-item hvr-underline-from-center">
                         <a class="nav-link" href="#">Harmonogram </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link hvr-sweep-to-top" href="#">Trasa</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link hvr-sweep-to-top" href="#">Zapisy</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -48,12 +54,6 @@
                             <a class="dropdown-item" href="#">Kobiety</a>
                             <a class="dropdown-item" href="#">Juniorzy</a>
                         </div>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link hvr-sweep-to-top" href="#">Trasa</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link hvr-sweep-to-top" href="#">Zapisy</a>
                     </li>
                     <li class="nav-item ">
                         <a class="nav-link hvr-sweep-to-top" href="#">Galeria</a>
@@ -71,6 +71,10 @@
                 </form>
             </div>
         </nav>
+    <div class="site-container">
+        <!-- Logo -->
+   
+
         <!--  SLIDER      -->
         <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -84,8 +88,8 @@
                         <div class="layer"></div>
                     </div>
                     <div class="carousel-caption ">
-                        <h3>Wydarzenie</h3>
-                        <p>Bieg będzie wielkim wydarzeniem </p>
+                        <h3>Zimowa Poniewierka</h3>
+                        <p>Na czas wydarzenia przygotowaliśmy wiele atrakcji</p>
                         <a class="btn  ">Więcej Informacji</a>
                     </div>
                 </div>
@@ -131,7 +135,7 @@
                 <div class="post-topbar">
 
                     <div class="row">
-                        <div class="col post-author "><i class="fa fa-user" aria-hidden="true"></i> Przemek
+                        <div class="col post-author "><i class="fa fa-user" aria-hidden="true"></i> Administrator
                         </div>
                         <div class="col post-date"><i class="fa fa-calendar-o" aria-hidden="true"></i> 14 PAŹDZIERNIKA 2017</div>
                     </div>
@@ -152,9 +156,9 @@
                 <div class="post-topbar">
 
                     <div class="row">
-                        <div class="col post-author"><i class="fa fa-user" aria-hidden="true"></i> Przemek
+                        <div class="col post-author"><i class="fa fa-user" aria-hidden="true"></i> Administrator
                         </div>
-                        <div class="col post-header"></div>
+                        
                         <div class="col post-date"><i class="fa fa-calendar-o" aria-hidden="true"></i> 13 PAŹDZIERNIKA 2017</div>
                     </div>
                 </div>
@@ -172,6 +176,7 @@
             </div>
         </div>
         <footer>
+            <div class="up-container"><a href="#"><i class="fa fa-angle-up fa-2x up-arrow" aria-hidden="true"></i></a></div>
             <div class="sponsors">
                 <h2 class="sponsors-header">Sponsorzy</h2>
                 <div class="container-fluid">
