@@ -12,6 +12,16 @@ h2 {
   text-transform: uppercase;
   font-size: 25px;
 }
+p {
+  padding: 5px;
+}
+.btn-center-link {
+  color: #000 !important;
+  margin-left: auto;
+  display: block;
+  margin-right: auto;
+  width: 200px;
+}
 a:hover {
   text-decoration: none;
 }
@@ -38,6 +48,12 @@ a:hover {
 .site-container {
   width: 100%;
   background: #fff;
+}
+.post-container {
+  padding: 15px;
+}
+.navbar {
+  z-index: 100;
 }
 .nav-fixed {
   position: fixed;
@@ -107,14 +123,14 @@ a.dropdown-item:hover {
   width: 100%;
   background-size: cover;
 }
-/* .layer {
-     background-color: rgba(47, 47, 47, 0.6);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    } */
+.layer {
+  background-color: rgba(47, 47, 47, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 .carousel-caption {
   position: absolute;
   top: 40%;
@@ -123,7 +139,7 @@ a.dropdown-item:hover {
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  text-shadow: 2px 2px 2px #000;
+  text-shadow: 2px 2px 8px #000;
 }
 .carousel-caption h3 {
   text-transform: uppercase;
@@ -145,6 +161,32 @@ a.dropdown-item:hover {
 }
 #slide3 {
   background: url("../img/slide-small/slide2.jpg");
+}
+#countdown {
+  background: url("../img/countdown/countdown-sm.jpg");
+}
+.countdown-caption {
+  position: absolute;
+  top: 200px;
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+  text-shadow: 2px 2px 8px #000;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  z-index: 1;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.countdown-caption h3 {
+  font-size: 30px;
+}
+.countdown-caption p {
+  font-size: 28px;
 }
 .breadcrumb {
   border-radius: 0px;
@@ -291,6 +333,9 @@ a.dropdown-item:hover {
   #slide3 {
     background-image: url("../img/slide-lg/slide2.jpg");
   }
+  #countdown {
+    background: url("../img/countdown/countdown-lg.jpg");
+  }
   .carousel-caption h3 {
     font-size: 45px;
   }
@@ -314,6 +359,15 @@ a.dropdown-item:hover {
   }
   .copyright {
     font-size: 16px;
+  }
+  .countdown-caption {
+    top: 280px;
+  }
+  .countdown-caption h3 {
+    font-size: 35px;
+  }
+  .countdown-caption p {
+    font-size: 38px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -355,6 +409,15 @@ a.dropdown-item:hover {
   }
   .breadcrumb {
     font-size: 19px;
+  }
+  .countdown-caption {
+    top: 300px;
+  }
+  .countdown-caption h3 {
+    font-size: 35px;
+  }
+  .countdown-caption p {
+    font-size: 40px;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -403,6 +466,15 @@ a.dropdown-item:hover {
   }
   .copyright {
     font-size: 20px;
+  }
+  .countdown-caption {
+    top: 320px;
+  }
+  .countdown-caption h3 {
+    font-size: 38px;
+  }
+  .countdown-caption p {
+    font-size: 42px;
   }
   /*     .scrollup
     {

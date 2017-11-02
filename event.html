@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <script src="js/sticky.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/countdown.js"></script>
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="site-container">
+        <div id="logo"> Logo</div>
+    </div>
+    <!--Navbar -->
+    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse bg-faded " data-spy="affix" data-spy="affix" data-offset-top="205">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <span class="navbar-brand">Menu</span>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link  hvr-underline-from-center" href="index.html">Aktualności <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active hvr-underline-from-center">
+                    <a class="nav-link hvr-sweep-to-top" href="#">Wydarzenie</a>
+                </li>
+                <li class="nav-item hvr-underline-from-center">
+                    <a class="nav-link" href="#">Harmonogram </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link hvr-sweep-to-top" href="#">Trasa</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link hvr-sweep-to-top" href="#">Zapisy</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Wyniki
+                        </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Mężczyźni</a>
+                        <a class="dropdown-item" href="#">Kobiety</a>
+                        <a class="dropdown-item" href="#">Juniorzy</a>
+                    </div>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link hvr-sweep-to-top" href="#">Galeria</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link hvr-sweep-to-top" href="#">Kontakt</a>
+                </li>
+
+
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input id="search-input" type="text" placeholder="Wyszukaj">
+                <i id="search" class="search-icon mr-sm-2 fa fa-search" aria-hidden="true"></i>
+            </form>
+        </div>
+    </nav>
+    <div class="site-container">
+        <!-- Logo -->
+        <div id="countdown" class="slide">
+            <div class="countdown-caption">
+
+                <h3>Do biegu pozostało:</h3>
+                <p class="countdown-text"> </p>
+
+            </div>
+        </div>
+        <div class="post-container">
+            <h2>"Zimowa Poniewierka"</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis quam est. Integer pharetra nulla lectus, sed suscipit eros luctus in. Nulla non cursus justo. Nam lacinia libero lorem, ac hendrerit sem rhoncus pharetra. Aenean vel convallis nunc, sit amet maximus dolor. Sed sed egestas tellus, non porttitor nisl. Donec volutpat odio id tortor laoreet feugiat. Integer non lorem ex. Praesent sit amet suscipit libero, et ornare leo. Maecenas elementum velit est, et condimentum justo tempus et. Etiam iaculis mauris id mi posuere, eget congue nisi pulvinar. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+            </p>
+            <p>
+                Quisque elementum, magna mollis egestas rutrum, ex massa placerat ante, vitae convallis magna purus in lacus. In lacinia facilisis efficitur. Ut ut dictum leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec vehicula leo accumsan nibh feugiat, eget faucibus risus efficitur. Nam nisi felis, volutpat in facilisis non, semper ut odio. Donec commodo purus id sapien faucibus, a dignissim ex rutrum. Quisque eu volutpat elit, eu sollicitudin purus. Ut a ultrices nunc.
+            </p>
+            <a href="#"  class="btn btn-center-link">Harmonogram</a>
+        </div>
+        <footer>
+            <div class="up-container"><a href="#"><i class="fa fa-angle-up fa-2x up-arrow" aria-hidden="true"></i></a></div>
+            <div class="sponsors">
+                <h2 class="sponsors-header">Sponsorzy</h2>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col"><img class="img-fluid img-sponsor" src="img/sponsors/logo1.png"></div>
+                        <div class="col"><img class="img-fluid img-sponsor" src="img/sponsors/logo2.png"></div>
+                        <div class="col"><img class="img-fluid img-sponsor" src="img/sponsors/logo3.png"></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="copyright">&copy; Wszelkie prawa zastrzeżone przez Grupa Biegowa</div>
+        </footer>
+    </div>
+    <!--  <div class="btn scrollup"><i class="fa fa-arrow-up"></i></div> -->
+</body>
+
+</html>
